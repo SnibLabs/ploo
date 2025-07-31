@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    background: radial-gradient(ellipse at 70% 30%, #222 0%, #050010 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+#gameContainer {
+    width: 420px;
+    margin: 40px auto;
+    box-shadow: 0 8px 32px #000b;
+    border-radius: 14px;
+    background: #181c20;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas {
+    background: linear-gradient(to bottom, #181c20 40%, #222842 100%);
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #0008;
+}
+.menu {
+    color: #fff;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 36px 0;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px #000c;
+}
+.menu button {
+    margin-top: 22px;
+    font-size: 1.1em;
+    padding: 9px 28px;
+    border-radius: 8px;
+    background: linear-gradient(90deg,#3d5afe 40%,#00e5ff 100%);
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 12px #0005;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.menu button:hover {
+    background: linear-gradient(90deg,#00e5ff 40%,#3d5afe 100%);
+}
+#scoreDisplay {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: #fff;
+    font-size: 1.1em;
+    text-shadow: 0 1px 4px #000a;
+    background: rgba(0,0,0,0.25);
+    padding: 4px 16px;
+    border-radius: 8px;
+    z-index: 10;
+    pointer-events: none;
+    font-family: 'Consolas', monospace;
+}
